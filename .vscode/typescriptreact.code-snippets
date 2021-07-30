@@ -1,0 +1,25 @@
+{
+    "component boilerplate": {
+        "prefix": "createComponent",
+        "body": [
+            "import React from \"react\"",
+            "",
+            "interface StyleProps { }",
+            "",
+            "const useStyles = makeStyles<Theme, StyleProps>(theme => ({",
+            "  ${2:entryClassName}Root: { }",
+            "}))",
+            "",
+            "interface Props { }",
+            "",
+            "const ${1:ComponentName} = (props: Props): JSX.Element => {",
+            "  const classes = useStyles({ })",
+            "",
+            "  return <>Hello ${1:ComponentName}</>",
+            "}",
+            "",
+            "export default ${1:ComponentName}"
+        ],
+        "description": "component boilerplate"
+    },
+}

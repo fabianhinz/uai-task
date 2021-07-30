@@ -1,0 +1,21 @@
+{
+    "store boilerplate": {
+        "prefix": "createStore",
+        "body": [
+            "import create from 'zustand'",
+            "import { devtools } from 'zustand/middleware'",
+            "",
+            "export type ${1:StoreName}State = {}",
+            "",
+            "export type ${1:StoreName}Actions = {}",
+            "",
+            "type ${1:StoreName} = ${1:StoreName}State & ${1:StoreName}Actions",
+            "",
+            "export const use${1:StoreName} = create<${1:StoreName}>(",
+            "    devtools((set, get, api) => ({}),",
+            "    '${1:StoreName}')",
+            ")",
+        ],
+        "description": "store boilerplate"
+    }
+}
