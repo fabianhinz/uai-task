@@ -17,7 +17,7 @@ export type TaggingStoreActions = {
 type TaggingStore = TaggingStoreState & TaggingStoreActions
 
 /**
- * stores frames mocked via {@link storeConstants.defaultTags}
+ * stores tags mocked via {@link storeConstants.defaultTags}
  */
 export const useTaggingStore = create<TaggingStore>(
     devtools(
