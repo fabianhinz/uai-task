@@ -6,7 +6,7 @@
             "",
             "interface StyleProps { }",
             "",
-            "const useStyles = makeStyles<Theme, StyleProps>(theme => ({",
+            "const useStyles = makeStyles<UaiTheme, StyleProps>(theme => ({",
             "  ${2:entryClassName}Root: { }",
             "}))",
             "",
